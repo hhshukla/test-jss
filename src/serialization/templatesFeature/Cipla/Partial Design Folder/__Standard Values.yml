@@ -1,0 +1,29 @@
+﻿---
+ID: "d58d33e1-9097-4f8d-b0b8-11ecd0ff182b"
+Parent: "8fc9567f-06eb-4eb2-be78-b2843741f0d2"
+Template: "8fc9567f-06eb-4eb2-be78-b2843741f0d2"
+Path: /sitecore/templates/Project/Cipla/Partial Design Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {8FC9567F-06EB-4EB2-BE78-B2843741F0D2}
+    {FD2059FD-6043-4DFE-8C04-E2437CE87634}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240227T123349Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c745c156-15f3-4214-bdf0-fe3f08a9f783"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240227T123350Z

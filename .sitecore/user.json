@@ -1,0 +1,16 @@
+{
+  "endpoints": {
+    "default": {
+      "allowWrite": true,
+      "host": "https://ciplacm.dev.local",
+      "authority": "https://ciplaidentityserver.dev.local",
+      "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjM1OEYyRTlEOUY4Njg5MzE3ODUyMDE4NDhGNTA3ODI3OENGQ0M1OUNSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6Ik5ZOHVuWi1HaVRGNFVnR0VqMUI0SjR6OHhadyJ9.eyJuYmYiOjE3MDkyNzQwMjQsImV4cCI6MTcwOTI3NzYyNCwiaXNzIjoiaHR0cHM6Ly9jaXBsYWlkZW50aXR5c2VydmVyLmRldi5sb2NhbCIsImF1ZCI6WyJzaXRlY29yZS5wcm9maWxlLmFwaSIsImh0dHBzOi8vY2lwbGFpZGVudGl0eXNlcnZlci5kZXYubG9jYWwvcmVzb3VyY2VzIl0sImNsaWVudF9pZCI6IkRldmljZSIsInN1YiI6ImM0M2E1MTdlOTE4MjRmZTRiNGE2MGUxZjEzYzRmMTU1IiwiYXV0aF90aW1lIjoxNzA5Mjc0MDE1LCJpZHAiOiJsb2NhbCIsIm5hbWUiOiJzaXRlY29yZVxcQWRtaW4iLCJlbWFpbCI6IiIsImh0dHA6Ly93d3cuc2l0ZWNvcmUubmV0L2lkZW50aXR5L2NsYWltcy9pc0FkbWluIjoiVHJ1ZSIsImp0aSI6IjgwMkUxQjUyMjU0NTk0RjlBMjg5RjYyOTJCQTIxMTI5Iiwic2lkIjoiMUU5ODhGOThDNjY2Qzc1QTQxM0JDQkE3NzE3QzE5NzQiLCJpYXQiOjE3MDkyNzQwMjQsInNjb3BlIjpbInNpdGVjb3JlLnByb2ZpbGUuYXBpIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.fR9TPGyHfP-WaJAmLmZ_mgLAT1xf15fZaPXrmu4upwUsUBQui5rjddrglfSP0vJK6t2XO3RPbHSC0IhVLrm--I2KogfWP90FC2dpNiQB7DUpfuAMmefShB5N27REYDzDP3_DHI4CX3U10a-blxzhx2ks1TuEstPD2Z_ppc3QTrXMb75Ems0HpEEwzTzWaD6K7LmxvMLauwY4_Nz8ou-v0eCgRA7uSz2TbvtC-Y5cVWFlnZ6MOQIKInrBI0PnWPEVMlztE104JTZB8yb7Bakc_B_PJRRRIs3vbyFbx5fjTbCQSuCM99v2KHkpcNorGD-1en-MGDEJrTtZvPk7qJ_Vkw",
+      "refreshToken": "4627BA066531F8E2578187F56CBEF55BDDD868DBBDD0A2183E279CA435DA0171",
+      "expiresIn": 3600,
+      "lastUpdated": "2024-03-01T06:20:24.5618414Z",
+      "clientId": "Device",
+      "variables": {}
+    }
+  },
+  "$schema": "./schemas/UserConfiguration.schema.json"
+}

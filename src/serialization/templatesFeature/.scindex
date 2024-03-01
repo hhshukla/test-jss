@@ -1,0 +1,208 @@
+﻿# Do not commit this file to source control or modify it. It is safe to delete; it will recreate itself.
+---
+File: |
+  C:\Projects\Cipla\breathefree\src\serialization\templatesFeature\Cipla\App Route.yml
+ID: "47d31ad5-e464-4d62-ab9e-dd601803ce5d"
+Parent: "d459d3fd-e03d-412e-b8c8-42a737df310c"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Cipla/App Route
+Signature: iJcGxSOShoFY8J1+oka9MR78c6YhrjGo1iidispKCVA=
+Modified: 638448741295443120
+---
+File: |
+  C:\Projects\Cipla\breathefree\src\serialization\templatesFeature\Cipla\Breathefree.yml
+ID: "fa99ec30-e586-4c61-8f5a-6e6cd1b511d0"
+Parent: "d459d3fd-e03d-412e-b8c8-42a737df310c"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/Project/Cipla/Breathefree
+Signature: CEvZ7fdTwEf6wxmucUkiSFmI4ortDWwhoMutAC4Hobw=
+Modified: 638448741295463107
+---
+File: |
+  C:\Projects\Cipla\breathefree\src\serialization\templatesFeature\Cipla\Headless Tenant.yml
+ID: "7903412d-78c5-4582-8394-357a7009cd3c"
+Parent: "d459d3fd-e03d-412e-b8c8-42a737df310c"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Cipla/Headless Tenant
+Signature: 6Hu9z8zIF3QQZEf+HkrYtM//A9u/R9A6a7SzivhVuF4=
+Modified: 638448741295550166
+---
+File: |
+  C:\Projects\Cipla\breathefree\src\serialization\templatesFeature\Cipla\Page Design Folder.yml
+ID: "72b0b4e5-c9dc-4eca-b42c-a267e19d2560"
+Parent: "d459d3fd-e03d-412e-b8c8-42a737df310c"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Cipla/Page Design Folder
+Signature: sUw/hii7VhDJ0DXLEBweRJAeTXgqZpGv/XhgTSHNo7w=
+Modified: 638448741295570418
+---
+File: |
+  C:\Projects\Cipla\breathefree\src\serialization\templatesFeature\Cipla\Page Designs.yml
+ID: "4cf7447e-d9c4-41a8-9978-714b6b8477de"
+Parent: "d459d3fd-e03d-412e-b8c8-42a737df310c"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Cipla/Page Designs
+Signature: ck1QCa6XB+sA+0tEEIoRN5mcFGkAPtFLsgGSq6RO0+w=
+Modified: 638448741295582274
+---
+File: |
+  C:\Projects\Cipla\breathefree\src\serialization\templatesFeature\Cipla\Partial Design Folder.yml
+ID: "8fc9567f-06eb-4eb2-be78-b2843741f0d2"
+Parent: "d459d3fd-e03d-412e-b8c8-42a737df310c"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Cipla/Partial Design Folder
+Signature: AC6ZUIpwaj0uhXvUNyF+sLNUGT0V4kL6OXJDIFn4Gro=
+Modified: 638448741295600627
+---
+File: |
+  C:\Projects\Cipla\breathefree\src\serialization\templatesFeature\Cipla\Partial Designs.yml
+ID: "3295ccea-a4e8-44fb-a7af-dcafbaa649cf"
+Parent: "d459d3fd-e03d-412e-b8c8-42a737df310c"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Cipla/Partial Designs
+Signature: vZw3cjG4RrgIh8HvVMiBoX3uh/3ZCIJi8mo6V9UiYMc=
+Modified: 638448741295616509
+---
+File: |
+  C:\Projects\Cipla\breathefree\src\serialization\templatesFeature\Cipla\App Route\__Standard Values.yml
+ID: "1d15d9f2-f341-443b-bf28-8105c1a3d36e"
+Parent: "47d31ad5-e464-4d62-ab9e-dd601803ce5d"
+Template: "47d31ad5-e464-4d62-ab9e-dd601803ce5d"
+Path: /sitecore/templates/Project/Cipla/App Route/__Standard Values
+Signature: u+ZYBpG/FB9BBnQ+jMvBAVsiNJU03CsekEcq86U6K/E=
+Modified: 638448741295640871
+---
+File: |
+  C:\Projects\Cipla\breathefree\src\serialization\templatesFeature\Cipla\Breathefree\Test.yml
+ID: "02d3e4ca-ebd2-4a98-a14a-4549a65d832b"
+Parent: "fa99ec30-e586-4c61-8f5a-6e6cd1b511d0"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Cipla/Breathefree/Test
+Signature: 2q2RkA7K1VCSeOVBT97cXQGPOjhxg2n7ErzQh74y/R4=
+Modified: 638448743846904032
+---
+File: |
+  C:\Projects\Cipla\breathefree\src\serialization\templatesFeature\Cipla\Breathefree\Test\Data\Description.yml
+ID: "02a7d295-e074-4fd9-af7f-9304a27920dd"
+Parent: "bb94fda8-0187-4673-8602-85e63841aa4a"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Project/Cipla/Breathefree/Test/Data/Description
+Signature: VilaIFrgTm4PfqYTdDmWIlia9b9apLU2FY5tLdPbRzQ=
+Modified: 638448743846973240
+---
+File: |
+  C:\Projects\Cipla\breathefree\src\serialization\templatesFeature\Cipla\Breathefree\Test\Data\ReletedSubjects.yml
+ID: "cd478689-34ae-455d-833b-3d52beb609b3"
+Parent: "bb94fda8-0187-4673-8602-85e63841aa4a"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Project/Cipla/Breathefree/Test/Data/ReletedSubjects
+Signature: 8EhLtAUyOHv85hPLt1RgHSjqs00wvUGFeeu9fZ6VkQQ=
+Modified: 638448743847004072
+---
+File: |
+  C:\Projects\Cipla\breathefree\src\serialization\templatesFeature\Cipla.yml
+ID: "d459d3fd-e03d-412e-b8c8-42a737df310c"
+Parent: "825b30b4-b40b-422e-9920-23a1b6bda89c"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/Project/Cipla
+Signature: CBK73B9TpSfXV0zngjgTw9IWuojHkjHJYJ1JF+1Tghk=
+Modified: 638448741295365630
+---
+File: |
+  C:\Projects\Cipla\breathefree\src\serialization\templatesFeature\Cipla\Headless Site.yml
+ID: "17b86a43-5de0-4d77-9328-b11b6b7d2b62"
+Parent: "d459d3fd-e03d-412e-b8c8-42a737df310c"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Cipla/Headless Site
+Signature: w/cILtPh5BsMI1aER+hATXHIqF74ZX2b1eXurFk0vHA=
+Modified: 638448741295476079
+---
+File: |
+  C:\Projects\Cipla\breathefree\src\serialization\templatesFeature\Cipla\Headless Site\__Standard Values.yml
+ID: "8c1e7172-0f11-47e3-a6d1-899b9bad100a"
+Parent: "17b86a43-5de0-4d77-9328-b11b6b7d2b62"
+Template: "17b86a43-5de0-4d77-9328-b11b6b7d2b62"
+Path: /sitecore/templates/Project/Cipla/Headless Site/__Standard Values
+Signature: +ZvKpmtSlQ+Jpshdp3F1hcyB4XRbiNAUXp7Zkm/SLSk=
+Modified: 638448741295660881
+---
+File: |
+  C:\Projects\Cipla\breathefree\src\serialization\templatesFeature\Cipla\Headless Tenant\__Standard Values.yml
+ID: "36428881-336b-4e74-99c7-205d93192d5a"
+Parent: "7903412d-78c5-4582-8394-357a7009cd3c"
+Template: "7903412d-78c5-4582-8394-357a7009cd3c"
+Path: /sitecore/templates/Project/Cipla/Headless Tenant/__Standard Values
+Signature: SYyOmKlZMbz8IpOL+7jMTJeZM9N6IutdHqvMCqCAa0g=
+Modified: 638448741295680869
+---
+File: |
+  C:\Projects\Cipla\breathefree\src\serialization\templatesFeature\Cipla\Page Design Folder\__Standard Values.yml
+ID: "7d614236-91ee-4351-b100-35930253386f"
+Parent: "72b0b4e5-c9dc-4eca-b42c-a267e19d2560"
+Template: "72b0b4e5-c9dc-4eca-b42c-a267e19d2560"
+Path: /sitecore/templates/Project/Cipla/Page Design Folder/__Standard Values
+Signature: RFqzS5pqTJfGthXjXQ6WHHIuWmBTLPn7zEiDGB8YCVI=
+Modified: 638448741295700880
+---
+File: |
+  C:\Projects\Cipla\breathefree\src\serialization\templatesFeature\Cipla\Page Designs\__Standard Values.yml
+ID: "c23ea276-ab93-4e8d-bc58-16e3f66c8b27"
+Parent: "4cf7447e-d9c4-41a8-9978-714b6b8477de"
+Template: "4cf7447e-d9c4-41a8-9978-714b6b8477de"
+Path: /sitecore/templates/Project/Cipla/Page Designs/__Standard Values
+Signature: yJHgNBgHyxVNA7C2n9lu7ldat+MGpCUOjkz0PeD+DPo=
+Modified: 638448741295725962
+---
+File: |
+  C:\Projects\Cipla\breathefree\src\serialization\templatesFeature\Cipla\Partial Design Folder\__Standard Values.yml
+ID: "d58d33e1-9097-4f8d-b0b8-11ecd0ff182b"
+Parent: "8fc9567f-06eb-4eb2-be78-b2843741f0d2"
+Template: "8fc9567f-06eb-4eb2-be78-b2843741f0d2"
+Path: /sitecore/templates/Project/Cipla/Partial Design Folder/__Standard Values
+Signature: jJac6WXNs2a2+5g68ZiP1Y5DbqdLPI4zByuBx7csA58=
+Modified: 638448741295744377
+---
+File: |
+  C:\Projects\Cipla\breathefree\src\serialization\templatesFeature\Cipla\Partial Designs\__Standard Values.yml
+ID: "5e9c90e3-37cc-46d4-982a-234aac950786"
+Parent: "3295ccea-a4e8-44fb-a7af-dcafbaa649cf"
+Template: "3295ccea-a4e8-44fb-a7af-dcafbaa649cf"
+Path: /sitecore/templates/Project/Cipla/Partial Designs/__Standard Values
+Signature: zmn/pZ+5BGQVY2o9GFAl7ewDalyBf4AucMWIErd7k9U=
+Modified: 638448741295765000
+---
+File: |
+  C:\Projects\Cipla\breathefree\src\serialization\templatesFeature\Cipla\Breathefree\Test\Data.yml
+ID: "bb94fda8-0187-4673-8602-85e63841aa4a"
+Parent: "02d3e4ca-ebd2-4a98-a14a-4549a65d832b"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Cipla/Breathefree/Test/Data
+Signature: QJIBMiDwVS4UG9lMZRj5hszHGHhbbTprYwTkFvlIvn0=
+Modified: 638448743846933257
+---
+File: |
+  C:\Projects\Cipla\breathefree\src\serialization\templatesFeature\Cipla\Breathefree\Test\Data\DateG.yml
+ID: "517ed057-ca91-452c-afd3-ddae4dfa6b51"
+Parent: "bb94fda8-0187-4673-8602-85e63841aa4a"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Project/Cipla/Breathefree/Test/Data/DateG
+Signature: a/Pjfs9zRr0GrGJCP2fUcP2fEC5QvYYDifByuZdx8eU=
+Modified: 638448743846983247
+---
+File: |
+  C:\Projects\Cipla\breathefree\src\serialization\templatesFeature\Cipla\Breathefree\Test\Data\Title.yml
+ID: "1b792151-e7d5-47d3-b1b9-128c51cfe1e0"
+Parent: "bb94fda8-0187-4673-8602-85e63841aa4a"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Project/Cipla/Breathefree/Test/Data/Title
+Signature: y7x4uG1T3GnmiWoizWQ+TvzqHxn9fksu0v3RjbpOZGU=
+Modified: 638448743846949936
+---
+File: |
+  C:\Projects\Cipla\breathefree\src\serialization\templatesFeature\Cipla\Breathefree\Test\Data\ToPage.yml
+ID: "97310fe1-ef05-4257-ba4b-e5da217a189b"
+Parent: "bb94fda8-0187-4673-8602-85e63841aa4a"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Project/Cipla/Breathefree/Test/Data/ToPage
+Signature: H/8Hsju5z/PPJW7kVDgTHapZX/68elLhxy1/T90fj8s=
+Modified: 638448743847050097

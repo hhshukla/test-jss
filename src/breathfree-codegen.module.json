@@ -1,0 +1,19 @@
+{
+  "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+  "namespace": "Breathefree",  
+  "items": {
+    "includes": [      
+      {
+        "name": "templatesFeature",
+        "path": "/sitecore/templates/project/Cipla",
+        "allowedPushOperations": "CreateAndUpdate"
+      }
+    ]
+  },
+  "leprechaun": {
+    "configuration": {
+      "@extends": "Breathefree",
+      "@name": "Project.Cipla"
+    }
+  }
+}

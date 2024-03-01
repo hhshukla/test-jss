@@ -1,0 +1,27 @@
+﻿---
+ID: "1d15d9f2-f341-443b-bf28-8105c1a3d36e"
+Parent: "47d31ad5-e464-4d62-ab9e-dd601803ce5d"
+Template: "47d31ad5-e464-4d62-ab9e-dd601803ce5d"
+Path: /sitecore/templates/Project/Cipla/App Route/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240227T123349Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8312ce36-193b-4f33-9951-7076e5338854"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240227T123349Z
