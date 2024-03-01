@@ -8,11 +8,7 @@
     "plugin:yaml/recommended",
     "plugin:prettier/recommended"
   ],
-  "plugins": [
-    "@typescript-eslint",
-    "prettier",
-    "yaml"
-  ],
+  "plugins": ["@typescript-eslint", "prettier", "yaml"],
   "ignorePatterns": [".generated/**/*", "**/*.d.ts", "**/*.js"],
   "rules": {
     "@next/next/no-img-element": "off", // Don't force next/image (not currently compatible with Sitecore editing)
@@ -20,6 +16,14 @@
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/no-explicit-any": "error",
-    "jsx-quotes": ["error", "prefer-double"]
+    "jsx-quotes": ["error", "prefer-double"],
+    "prettier/prettier": [
+      "error", // alternativly change to 'warn' if you want only warning
+      {
+        "endOfLine": "auto"
+        // ... put other prettier rules here like "semi":flase,
+      }
+    ]
   }
 }
+
