@@ -21,7 +21,6 @@
       "error", // alternativly change to 'warn' if you want only warning
       {
         "endOfLine": "auto"
-        // ... put other prettier rules here like "semi":flase,
       }
     ]
   }
