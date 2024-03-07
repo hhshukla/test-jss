@@ -15,6 +15,10 @@ export type ContentBlockProps = ComponentProps & {
  */
 const ContentBlock = ({ fields }: ContentBlockProps): JSX.Element => {
   // console.log(fields);
+  if (!fields) {
+    return <></>;
+  }
+
   return (
     <div className="contentBlock">
       <Text tag="h2" className="contentTitle" field={fields.heading} />
