@@ -11,31 +11,38 @@ const publicUrl = getPublicUrl();
 
 const navigation = tv({
   slots: {
-    navbar: 'flex justify-between p-4 bg-slate-400',
+    container: 'bg-primary-gray-tint-400',
+    navbar: 'flex justify-between p-4 container mx-auto',
     navWrapper: 'flex items-center gap-8',
   },
 });
 
 const Navigation = (): JSX.Element => {
-  const { navbar, navWrapper } = navigation();
+  const { navbar, navWrapper, container } = navigation();
   return (
-    <div className={navbar()}>
-      <nav>
-        <ul className={navWrapper()}>
-          <li>
-            <a href="https://sitecore.com">
-              <img src={`${publicUrl}/sc_logo.svg`} alt="Sitecore" />
-            </a>
-          </li>
-          <li>
-            <a href="https://jss.sitecore.com">JSS Documentation</a>
-          </li>
-          <li>
-            <a href="https://github.com/Sitecore/jss">JSS Repository</a>
-          </li>
-        </ul>
-      </nav>
-      <Button text="Sign In" />
+    <div className={container()}>
+      <div className={navbar()}>
+        <nav>
+          <ul className={navWrapper()}>
+            <li>
+              <a href="https://sitecore.com">
+                <img src={`${publicUrl}/sc_logo.svg`} alt="Sitecore" />
+              </a>
+            </li>
+            <li>
+              <a href="https://jss.sitecore.com" className="font-poppin">
+                JSS Documentation
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Sitecore/jss" className="font-poppin">
+                JSS Repository
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <Button text="Sign In" />
+      </div>
     </div>
   );
 };

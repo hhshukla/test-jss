@@ -1,0 +1,142 @@
+@layer base {
+  :root {
+    /** Primary in figma 
+     * example : color-primary-green == (tailwind class) bg-primary-green
+     * using this way we align with figma design
+     **/
+    --color-primary-green: 150 201 79; /* #96c94f */
+    --color-primary-blue: 0 110 184; /* #006eb8 */
+    --color-primary-less-black: 48 48 48; /* #303030 */
+    --color-primary-white: 255 255 255; /* #ffffff */
+
+    /* Secondary in figma */
+    --color-secondary-aqua-green: 150 213 210; /* #96d5d2 */
+    --color-secondary-dark-green: 36 68 53; /* #244435 */
+    --color-secondary-dark-gray: 136 136 136; /* #888888 */
+    --color-secondary-light-gray: 245 245 245; /* #f5f5f5 */
+
+    /* Special Color */
+    --color-special-success: 124 176 49; /* #7cb031 */
+    --color-special-warning: 255 185 2; /* #ffb902 */
+    --color-special-error: 218 67 82; /* #da4352 */
+
+    /** Primary Shades 
+     * we are using shades in range of 100 , 200, 300, 400
+     * example : color-green-shades-1 == (tailwind class) bg-primary-green-shade-100
+     * using this way we align with figma design
+     **/
+    --color-green-shade-1: 123 172 52; /* #7bac34 */
+    --color-green-shade-2: 92 129 39; /* #5c8127 */
+    --color-green-shade-3: 61 86 26; /* #3d561a */
+    --color-green-shade-4: 31 43 13; /* #1f2b0d */
+
+    --color-blue-shade-1: 15 97 162; /* #0f61a2 */
+    --color-blue-shade-2: 24 73 119; /* #184977 */
+    --color-blue-shade-3: 24 50 74; /* #18324a */
+    --color-blue-shade-4: 18 28 41; /* #121c29 */
+
+    /** Primary Tints 
+     * we are using tint in range of 100 , 200, 300, 400
+     * example : color-green-tint-1 == (tailwind class) bg-primary-green-tint-100
+     * using this way we align with figma design
+     **/
+
+    --color-green-tint-1: 226 240 205; /* #e2f0cd */
+    --color-green-tint-2: 233 244 218; /* #e9f4da */
+    --color-green-tint-3: 240 248 230; /* #f0f8e6 */
+    --color-green-tint-4: 248 251 243; /* #f8fbf3 */
+
+    --color-blue-tint-1: 204 226 241; /* #cce2f1 */
+    --color-blue-tint-2: 217 233 244; /* #d9e9f4 */
+    --color-blue-tint-3: 230 241 248; /* #e6f1f8 */
+    --color-blue-tint-4: 242 248 251; /* #f2f8fb */
+
+    --color-gray-tint-1: 214 214 214; /* #d6d6d6 */
+    --color-gray-tint-2: 224 224 224; /* #e0e0e0 */
+    --color-gray-tint-3: 234 234 234; /* #eaeaea */
+    --color-gray-tint-4: 248 248 248; /* #f8f8f8 */
+  }
+
+  /* Font Faces */
+  @font-face {
+    font-family: Poppins;
+    src: url('/fonts/Poppins-Thin.woff2') format('woff2'),
+      url('/fonts/Poppins-Thin.ttf') format('truetype');
+    font-weight: 250;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: Poppins;
+    src: url('/fonts/Poppins-ExtraLight.woff2') format('woff2'),
+      url('/fonts/Poppins-ExtraLight.ttf') format('truetype');
+    font-weight: 275;
+    font-style: normal;
+  }
+  /* @font-face {
+    font-family: Poppins;
+    src: url('/fonts/Poppins-Light.woff2') format('woff2'),
+      url('/fonts/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: Poppins;
+    src: url('/fonts/Poppins-Regular.woff2') format('woff2'),
+      url('/fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: Poppins;
+    src: url('/fonts/Poppins-Medium.woff2') format('woff2'),
+      url('/fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: Poppins;
+    src: url('/fonts/Poppins-SemiBold.woff2') format('woff2'),
+      url('/fonts/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: Poppins;
+    src: url('/fonts/Poppins-Bold.woff2') format('woff2'),
+      url('/fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: Poppins;
+    src: url('/fonts/Poppins-Black.woff2') format('woff2'),
+      url('/fonts/Poppins-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  } */
+
+  h1 {
+    @apply font-poppin text-heading-1;
+  }
+  h2 {
+    @apply font-poppin text-heading-2;
+  }
+  h3 {
+    @apply font-poppin text-heading-3;
+  }
+  h4 {
+    @apply font-poppin text-heading-4;
+  }
+  h5,
+  h6 {
+    @apply font-poppin text-heading-5;
+  }
+
+  p,
+  span,
+  a,
+  li {
+    @apply font-poppin text-body;
+  }
+}
+
