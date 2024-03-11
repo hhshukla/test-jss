@@ -3,7 +3,7 @@ import { getPublicUrl } from '@sitecore-jss/sitecore-jss-nextjs';
 import { tv } from 'tailwind-variants';
 
 //--- Helpers
-import Button from 'components/helpers/Buttons';
+import Button from 'components/helpers/Button/Button';
 
 // Prefix public assets with a public URL to enable compatibility with Sitecore Experience Editor.
 // If you're not supporting the Experience Editor, you can remove this.
@@ -41,7 +41,7 @@ const Navigation = (): JSX.Element => {
             </li>
           </ul>
         </nav>
-        <Button text="Sign In" />
+        <Button field={{ value: { text: 'Sign In', href: '/home' } }} />
       </div>
     </div>
   );

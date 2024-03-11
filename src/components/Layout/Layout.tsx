@@ -6,7 +6,7 @@ import {
   getPublicUrl,
   LayoutServiceData,
 } from '@sitecore-jss/sitecore-jss-nextjs';
-import Navigation from 'src/Navigation';
+import Navigation from 'components/Layout/Navigation';
 
 // Prefix public assets with a public URL to enable compatibility with Sitecore Experience Editor.
 // If you're not supporting the Experience Editor, you can remove this.
