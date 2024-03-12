@@ -1,3 +1,4 @@
+import React from 'react';
 import { Text, RichText, Field } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 

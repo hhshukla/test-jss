@@ -1,7 +1,7 @@
 // Global
 import { Link, LinkField, LinkFieldValue } from '@sitecore-jss/sitecore-jss-nextjs';
 import { LinkProps } from '@sitecore-jss/sitecore-jss-react';
-import NextLink from 'next/link';
+// import NextLink from 'next/link';
 import React from 'react';
 
 // Lib
@@ -54,8 +54,9 @@ const LinkWrapper = React.forwardRef(
       // Force lowercase links for internal urls
       value.href = value.href?.toLocaleLowerCase();
     }
+    // const { href, querystring, anchor } = value;
 
-    const { href, querystring, anchor } = value;
+    console.log('className :', className);
 
     // In experience editor, do not pass any children but retain basic styling so that double components do not appear when using <Link>
     if (isEE && !ignoreEE) {
@@ -71,6 +72,7 @@ const LinkWrapper = React.forwardRef(
       );
     }
 
+    console.log('Link Wrapper value:', value, props);
     // If no content is present, don't print
     if (
       !suppressLinkText &&
@@ -81,7 +83,49 @@ const LinkWrapper = React.forwardRef(
       return <></>;
 
     return (
-      <NextLink
+      <Link
+        className={className}
+        field={asLinkField}
+        showLinkTextWithChildrenPresent={false}
+        internalLinkMatcher={INTERNAL_LINK_REGEX}
+        aria-label={props['aria-label'] ? props['aria-label'] : text}
+        data-component="helpers/a11y/linkwrapper"
+        // href={{ pathname: href, query: querystring, hash: anchor }}
+        key="link"
+        // Sitecore's Link field explicitly strips out the locale.  We want to keep it.
+        // locale={false}=
+        ref={typeof ref !== 'string' ? ref : null}
+        {...props}
+      >
+        <>
+          {/* {showLinkTextWithChildrenPresent && text ? (
+            <div dangerouslySetInnerHTML={{ __html: text }} />
+          ) : null} */}
+          {text}
+          {children}
+          {(target === '_blank' || srOnlyText) && (
+            <>
+              <span className="sr-only">
+                {srOnlyText && srOnlyText}
+                {/* Preserve a single space character before SR Tab Text */}
+                {target === '_blank' && ' (Opens in a new tab)'}
+              </span>
+              {/* Icon Goes Here */}
+              {!suppressNewTabIcon && target === '_blank' && <span></span>}
+            </>
+          )}
+        </>
+      </Link>
+    );
+  }
+);
+
+LinkWrapper.displayName = 'LinkWrapper';
+
+export default LinkWrapper;
+
+{
+  /* <NextLink
         title={value.title}
         target={value.target}
         className={className}
@@ -94,26 +138,22 @@ const LinkWrapper = React.forwardRef(
         ref={typeof ref !== 'string' ? ref : null}
         {...props}
       >
-        {showLinkTextWithChildrenPresent && text ? (
-          <div dangerouslySetInnerHTML={{ __html: text }} />
-        ) : null}
-        {children}
-        {(target === '_blank' || srOnlyText) && (
-          <>
-            <span className="sr-only">
-              {srOnlyText && srOnlyText}
-              {/* Preserve a single space character before SR Tab Text */}
-              {target === '_blank' && ' (Opens in a new tab)'}
-            </span>
-            {/* Icon Goes Here */}
-            {!suppressNewTabIcon && target === '_blank' && <span></span>}
-          </>
-        )}
-      </NextLink>
-    );
-  }
-);
-
-LinkWrapper.displayName = 'LinkWrapper';
-
-export default LinkWrapper;
+        <>
+          {showLinkTextWithChildrenPresent && text ? (
+            <div dangerouslySetInnerHTML={{ __html: text }} />
+          ) : null}
+          {children}
+          {(target === '_blank' || srOnlyText) && (
+            <>
+              <span className="sr-only">
+                {srOnlyText && srOnlyText}
+                Preserve a single space character before SR Tab Text
+                {target === '_blank' && ' (Opens in a new tab)'}
+              </span>
+              Icon Goes Here
+              {!suppressNewTabIcon && target === '_blank' && <span></span>}
+            </>
+          )}
+        </>
+      </NextLink> */
+}
