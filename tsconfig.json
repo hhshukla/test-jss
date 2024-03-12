@@ -29,7 +29,7 @@
     "noUnusedParameters": true,
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/stories/helpers/Button/SvgIcon"],
   "exclude": ["node_modules"]
 }
 
