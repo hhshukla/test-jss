@@ -2,8 +2,8 @@
 // SEE: https://refine.dev/blog/using-next-image/#src
 
 // Global
-import { Image as JSSImage, ImageField } from '@sitecore-jss/sitecore-jss-nextjs';
-import Image, { ImageProps } from 'next/image';
+import { NextImage, ImageField } from '@sitecore-jss/sitecore-jss-nextjs';
+import Image, { ImageProps, StaticImageData } from 'next/image';
 
 // Lib
 import useExperienceEditor from 'lib/use-experience-editor';
@@ -35,7 +35,7 @@ export interface ImageWrapperProps {
   sizes?: string;
 }
 
-type NextImageLayoutOption = 'fill' | 'intrinsic' | 'responsive';
+type NextImageLayoutOption = 'fill' | 'intrinsic' | 'responsive' | 'fixed';
 
 const ImageWrapper = ({
   className,
@@ -45,38 +45,31 @@ const ImageWrapper = ({
   priority,
   sizes,
 }: ImageWrapperProps): JSX.Element => {
-  const { alt, height, src, width } = field?.value || {};
+  const { alt, height, width, src } = field?.value || {};
   const isEE = useExperienceEditor;
-
-  const newSrc = normalizeImageUrl(src);
 
   // If running in Experience Editor, return <JSSImage /> component.
   if (isEE()) {
-    return (
-      <JSSImage field={{ ...field, value: { ...field?.value, src: newSrc } }} editable={editable} />
-    );
+    return <NextImage field={{ ...field }} editable={editable} />;
   }
-
-  // If the image has no src property, return nothing.
-  if (!newSrc) return <></>;
 
   const nextImageProps: ImageProps = {
     alt: (alt as string) || '',
     className: className,
-    // layout,
+    layout,
     priority,
     sizes,
-    src: newSrc,
+    src: src as { default: StaticImageData } | string,
   };
 
-  // Remove layout and update with new usage based on NextImage in Next 13+
-  if (layout === 'responsive') {
-    nextImageProps.sizes = '100vw';
-    nextImageProps.style = {
-      width: '100%',
-      height: 'auto',
-    };
-  }
+  // // Remove layout and update with new usage based on NextImage in Next 13+
+  // if (layout === 'responsive') {
+  //   nextImageProps.sizes = '100vw';
+  //   nextImageProps.style = {
+  //     width: '100%',
+  //     height: 'auto',
+  //   };
+  // }
 
   // if (layout === 'fill') {
   //   nextImageProps.fill = true;
@@ -87,29 +80,11 @@ const ImageWrapper = ({
     nextImageProps.width = width as number;
   }
 
-  // for local development with webp images that are missing width property.
-  if (process.env.NODE_ENV === 'development' && !nextImageProps.width && !nextImageProps.layout)
-    return <JSSImage data-component="helpers/general/imagewrapper" {...nextImageProps} />;
+  // // for local development with webp images that are missing width property.
+  // if (process.env.NODE_ENV === 'development' && !nextImageProps.width && !nextImageProps.layout)
+  //   return <NextImage data-component="helpers/ImageWrapper/ImageWrapper" {...nextImageProps} />;
 
-  return <Image data-component="helpers/general/imagewrapper" {...nextImageProps} />;
+  return <Image data-component="helpers/ImageWrapper/ImageWrapper" {...nextImageProps} />;
 };
 
 export default ImageWrapper;
-
-/**
- * To support preview site we normalize media urls to strip out the domain if it is coming from Sitecore.
- */
-export function normalizeImageUrl(src: string | undefined) {
-  let newSrc = src;
-  if (src) {
-    const publicUrl = new URL(process.env.PUBLIC_URL as string);
-
-    // If it's a fully qualified url, use it as is, otherwise include the public url
-    const imageUrl = src.startsWith('http') ? new URL(src) : new URL(src, publicUrl);
-
-    if (imageUrl.pathname.startsWith('/-/media/')) {
-      newSrc = src.replace(imageUrl.origin, '');
-    }
-  }
-  return newSrc;
-}
