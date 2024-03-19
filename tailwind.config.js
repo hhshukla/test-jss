@@ -1,5 +1,7 @@
+const { withTV } = require('tailwind-variants/dist/transformer');
+
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+module.exports = withTV({
   content: [
     // if using `src` directory:
     './src/**/*.{js,ts,jsx,tsx,mdx}',
@@ -83,7 +85,11 @@ module.exports = {
       },
       transparent: 'transparent',
     },
+
     fontSize: {
+      1: '0.25rem' /** 4px */,
+      1.5: '0.375rem' /** 6px */,
+      2: '0.5rem' /** 8px */,
       2.5: '0.625rem' /** 10px */,
       3: '0.75rem' /** 12px */,
       3.5: '0.875rem' /** 14px */,
@@ -93,12 +99,14 @@ module.exports = {
       5.5: '1.375rem' /** 22px */,
       6: '1.5rem' /** 24px */,
       7: '1.75rem' /** 28px */,
+      7.5: '1.875rem' /** 30px */,
       8: '2rem' /** 32px */,
       9: '2.25rem' /** 36px */,
       10: '2.5rem' /** 40px */,
       11: '2.75rem' /** 44px */,
       12: '3rem' /** 48px */,
       15: '3.74rem' /** 60px */,
+      17: '4.25rem' /** 68px */,
       'heading-1': ['3rem', { lineHeight: '60px', letterSpacing: '0' }],
       'heading-2': ['2.5rem', { lineHeight: '46px', letterSpacing: '0' }],
       'heading-3': ['2.25rem', { lineHeight: '42px', letterSpacing: '0' }],
@@ -108,7 +116,51 @@ module.exports = {
       body: ['1rem', { lineHeight: '20px', letterSpacing: '0' }],
       'body-small': ['0.875rem', { lineHeight: '20px', letterSpacing: '0' }],
     },
-    extend: {},
+    borderRadius: {
+      none: '0px',
+      1: '0.25rem' /** 4px */,
+      1.5: '0.375rem' /** 6px */,
+      2: '0.5rem' /** 8px */,
+      2.5: '0.625rem' /** 10px */,
+      3: '0.75rem' /** 12px */,
+      3.5: '0.875rem' /** 14px */,
+      4: '1rem' /** 16px */,
+      4.5: '1.125rem' /** 18px */,
+      5: '1.25rem' /** 20px */,
+      5.5: '1.375rem' /** 22px */,
+      6: '1.5rem' /** 24px */,
+      7: '1.75rem' /** 28px */,
+      7.5: '1.875rem' /** 30px */,
+      8: '2rem' /** 32px */,
+      9: '2.25rem' /** 36px */,
+      10: '2.5rem' /** 40px */,
+      11: '2.75rem' /** 44px */,
+      12: '3rem' /** 48px */,
+      15: '3.74rem' /** 60px */,
+      17: '4.25rem' /** 68px */,
+      full: '9999px',
+    },
+    extend: {
+      spacing: {
+        1: '0.25rem' /** 4px */,
+        1.5: '0.375rem' /** 6px */,
+        2: '0.5rem' /** 8px */,
+        2.5: '0.625rem' /** 10px */,
+        3.5: '0.875rem' /** 14px */,
+        4.5: '1.125rem' /** 18px */,
+        5.5: '1.375rem' /** 22px */,
+        7.5: '1.875rem' /** 30px */,
+        17: '4.25rem' /** 68px */,
+      },
+      lineHeight: {
+        2.5: '0.625rem' /** 10px */,
+        3.5: '0.875rem' /** 14px */,
+        4.5: '1.125rem' /** 18px */,
+        5.5: '1.375rem' /** 22px */,
+        7.5: '1.875rem' /** 30px */,
+        17: '4.25rem' /** 68px */,
+      },
+    },
   },
   plugins: [],
-};
+});
