@@ -1,7 +1,11 @@
+// Globals
 import type { Meta, StoryObj } from '@storybook/react';
-
+// components
+import ContentBlock, { ContentBlockProps } from 'components/authorable/ContentBlock/ContentBlock';
+// libs
+import { expandObj, flattenObj } from 'lib/object-parser';
+// mock
 import { defaultData } from './ContentBlock.mock';
-import ContentBlock from 'components/authorable/ContentBlock/ContentBlock';
 
 //👇 This default export determines where your story goes in the story list
 const meta: Meta<typeof ContentBlock> = {
@@ -9,9 +13,13 @@ const meta: Meta<typeof ContentBlock> = {
   component: ContentBlock,
 };
 
-export default meta;
 type Story = StoryObj<typeof ContentBlock>;
 
 export const FirstStory: Story = {
-  args: defaultData,
+  args: flattenObj(defaultData),
+  render: (props) => {
+    return <ContentBlock {...(expandObj({ ...props }) as ContentBlockProps)} />;
+  },
 };
+
+export default meta;

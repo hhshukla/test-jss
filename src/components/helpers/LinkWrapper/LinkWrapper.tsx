@@ -56,7 +56,7 @@ const LinkWrapper = React.forwardRef(
     }
     // const { href, querystring, anchor } = value;
 
-    console.log('className :', className);
+    // console.log('className :', className);
 
     // In experience editor, do not pass any children but retain basic styling so that double components do not appear when using <Link>
     if (isEE && !ignoreEE) {
@@ -72,7 +72,7 @@ const LinkWrapper = React.forwardRef(
       );
     }
 
-    console.log('Link Wrapper value:', value, props);
+    // console.log('Link Wrapper value:', value, props);
     // If no content is present, don't print
     if (
       !suppressLinkText &&
