@@ -141,6 +141,14 @@ module.exports = withTV({
       full: '9999px',
     },
     extend: {
+      gradient: {
+        'radial-gradient': {
+          width: '100px', // Adjust according to your design
+          height: '100px', // Adjust according to your design
+          background:
+            'radial-gradient(50% 50% at 50% 50%, rgba(151, 202, 78, 0.35) 0%, rgba(217, 217, 217, 0.00) 100%)',
+        },
+      },
       spacing: {
         1: '0.25rem' /** 4px */,
         1.5: '0.375rem' /** 6px */,

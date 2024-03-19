@@ -16,6 +16,13 @@ const nextConfig = {
   env: {
     PUBLIC_URL: publicUrl,
   },
+  images: {
+    remotePatterns: [
+      {
+        hostname: 'ciplacm.dev.local',
+      },
+    ],
+  },
 
   i18n: {
     // These are all the locales you want to support in your application.
